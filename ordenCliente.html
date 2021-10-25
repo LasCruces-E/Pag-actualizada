@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Ordenes</title>
+</head>
+<body>
+    <div class="ordenes container" id="wrapper">
+
+        <!--<div class="card mt-5 p-2">
+            <div class="row d-flex flex-row align-items-baseline">
+                <div class="col-9">
+                    <input class="form-control nombre-input" type="text" placeholder="Nombre del cliente o mesa" aria-label="default input example">
+                </div>
+                <div class="col-3">
+                    <button type="submit" class="nombre btn btn-primary btn-sm">Aceptar</button>
+                </div>
+                <div class="col-12 d-flex flex-row mt-2">
+                    <p>Pedido de:</p>
+                    <p class="nombre ms-2 fw-bold"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="fw-bold">Nombre del producto</p>
+                </div>
+                <div class="col">
+                    <p class="fw-bold">Costo</p>
+                </div>
+                <div class="col">
+                    <p class="fw-bold">Cantidad</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h6>Orden de barbacoa de borrego</h6>
+                </div>
+                <div class="col">
+                    <p class="costo">150</p>
+                </div>
+                <div class="col d-flex align-items-baseline">
+                    <button type="button" class="buttonmenos btn btn-primary btn-sm">-</button>
+                    <p class="cantidad ms-3 me-3">0</p>
+                    <button type="button" class="buttonmas btn btn-primary btn-sm">+</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h6>Orden de barbacoa de res</h6>
+                </div>
+                <div class="col">
+                    <p class="costo">120</p>
+                </div>
+                <div class="col d-flex align-items-baseline">
+                    <button type="button" class="buttonmenos btn btn-primary btn-sm">-</button>
+                    <p class="cantidad ms-3 me-3">0</p>
+                    <button type="button" class="buttonmas btn btn-primary btn-sm">+</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h6>Orden de carnitas</h6>
+                </div>
+                <div class="col">
+                    <p class="costo">100</p>
+                </div>
+                <div class="col d-flex align-items-baseline">
+                    <button type="button" class="buttonmenos btn btn-primary btn-sm">-</button>
+                    <p class="cantidad ms-3 me-3">0</p>
+                    <button type="button" class="buttonmas btn btn-primary btn-sm">+</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h6>Pizza</h6>
+                </div>
+                <div class="col">
+                    <p class="costo">240</p>
+                </div>
+                <div class="col d-flex align-items-baseline">
+                    <button type="button" class="buttonmenos btn btn-primary btn-sm">-</button>
+                    <p class="cantidad ms-3 me-3">0</p>
+                    <button type="button" class="buttonmas btn btn-primary btn-sm">+</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h6>Gordas de horno</h6>
+                </div>
+                <div class="col">
+                    <p class="costo">20</p>
+                </div>
+                <div class="col d-flex align-items-baseline">
+                    <button type="button" class="buttonmenos btn btn-primary btn-sm">-</button>
+                    <p class="cantidad ms-3 me-3">0</p>
+                    <button type="button" class="buttonmas btn btn-primary btn-sm">+</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h6>Atole de arroz</h6>
+                </div>
+                <div class="col">
+                    <p class="costo">20</p>
+                </div>
+                <div class="col d-flex align-items-baseline">
+                    <button type="button" class="buttonmenos btn btn-primary btn-sm">-</button>
+                    <p class="cantidad ms-3 me-3">0</p>
+                    <button type="button" class="buttonmas btn btn-primary btn-sm">+</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h6>Gorditas</h6>
+                </div>
+                <div class="col">
+                    <p class="costo">15</p>
+                </div>
+                <div class="col d-flex align-items-baseline">
+                    <button type="button" class="buttonmenos btn btn-primary btn-sm">-</button>
+                    <p class="cantidad ms-3 me-3">0</p>
+                    <button type="button" class="buttonmas btn btn-primary btn-sm">+</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h6>Quesadilla sencilla</h6>
+                </div>
+                <div class="col">
+                    <p class="costo">15</p>
+                </div>
+                <div class="col d-flex align-items-baseline">
+                    <button type="button" class="buttonmenos btn btn-primary btn-sm">-</button>
+                    <p class="cantidad ms-3 me-3">0</p>
+                    <button type="button" class="buttonmas btn btn-primary btn-sm">+</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h6>Quesadilla con guisado</h6>
+                </div>
+                <div class="col">
+                    <p class="costo">25</p>
+                </div>
+                <div class="col d-flex align-items-baseline">
+                    <button type="button" class="buttonmenos btn btn-primary btn-sm">-</button>
+                    <p class="cantidad ms-3 me-3">0</p>
+                    <button type="button" class="buttonmas btn btn-primary btn-sm">+</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h6>Quesadilla de arrachera</h6>
+                </div>
+                <div class="col">
+                    <p class="costo">30</p>
+                </div>
+                <div class="col d-flex align-items-baseline">
+                    <button type="button" class="buttonmenos btn btn-primary btn-sm">-</button>
+                    <p class="cantidad ms-3 me-3">0</p>
+                    <button type="button" class="buttonmas btn btn-primary btn-sm">+</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h6>Sopes sencillos</h6>
+                </div>
+                <div class="col">
+                    <p class="costo">15</p>
+                </div>
+                <div class="col d-flex align-items-baseline">
+                    <button type="button" class="buttonmenos btn btn-primary btn-sm">-</button>
+                    <p class="cantidad ms-3 me-3">0</p>
+                    <button type="button" class="buttonmas btn btn-primary btn-sm">+</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h6>Sopes con guisado</h6>
+                </div>
+                <div class="col">
+                    <p class="costo">20</p>
+                </div>
+                <div class="col d-flex align-items-baseline">
+                    <button type="button" class="buttonmenos btn btn-primary btn-sm">-</button>
+                    <p class="cantidad ms-3 me-3">0</p>
+                    <button type="button" class="buttonmas btn btn-primary btn-sm">+</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h6>Menudo chico</h6>
+                </div>
+                <div class="col">
+                    <p class="costo">75</p>
+                </div>
+                <div class="col d-flex align-items-baseline">
+                    <button type="button" class="buttonmenos btn btn-primary btn-sm">-</button>
+                    <p class="cantidad ms-3 me-3">0</p>
+                    <button type="button" class="buttonmas btn btn-primary btn-sm">+</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h6>Menudo grande</h6>
+                </div>
+                <div class="col">
+                    <p class="costo">85</p>
+                </div>
+                <div class="col d-flex align-items-baseline">
+                    <button type="button" class="buttonmenos btn btn-primary btn-sm">-</button>
+                    <p class="cantidad ms-3 me-3">0</p>
+                    <button type="button" class="buttonmas btn btn-primary btn-sm">+</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h6>Desayuno de la casa</h6>
+                </div>
+                <div class="col">
+                    <p class="costo">90</p>
+                </div>
+                <div class="col d-flex align-items-baseline">
+                    <button type="button" class="buttonmenos btn btn-primary btn-sm">-</button>
+                    <p class="cantidad ms-3 me-3">0</p>
+                    <button type="button" class="buttonmas btn btn-primary btn-sm">+</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h6>Cerveza</h6>
+                </div>
+                <div class="col">
+                    <p class="costo">25</p>
+                </div>
+                <div class="col d-flex align-items-baseline">
+                    <button type="button" class="buttonmenos btn btn-primary btn-sm">-</button>
+                    <p class="cantidad ms-3 me-3">0</p>
+                    <button type="button" class="buttonmas btn btn-primary btn-sm">+</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h6>Refresco</h6>
+                </div>
+                <div class="col">
+                    <p class="costo">20</p>
+                </div>
+                <div class="col d-flex align-items-baseline">
+                    <button type="button" class="buttonmenos btn btn-primary btn-sm">-</button>
+                    <p class="cantidad ms-3 me-3">0</p>
+                    <button type="button" class="buttonmas btn btn-primary btn-sm">+</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h6>Boing</h6>
+                </div>
+                <div class="col">
+                    <p class="costo">18</p>
+                </div>
+                <div class="col d-flex align-items-baseline">
+                    <button type="button" class="buttonmenos btn btn-primary btn-sm">-</button>
+                    <p class="cantidad ms-3 me-3">0</p>
+                    <button type="button" class="buttonmas btn btn-primary btn-sm">+</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col d-flex flex-row">
+                    <p> Total: </p> 
+                    <p class="total ms-5 fw-bold"></p> 
+                </div>
+                <div class="col">
+                    <button type="button" class="total btn btn-primary">Total</button>
+                </div>
+            </div>
+        </div>     
+    </div>-->
+    
+    <div class="container agregar mt-5">
+        <button type="button" class="agregar-pedido btn btn-primary">Agregar pedido</button>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            var x;
+            var pedido = '<div class="card mt-5 p-2"><div class="row d-flex flex-row align-items-baseline"><div class="col-9"><input class="form-control nombre-input" type="text" placeholder="Nombre del cliente o mesa" aria-label="default input example"></div><div class="col-3"><button type="submit" class="nombre btn btn-primary btn-sm">Aceptar</button></div><div class="col-12 d-flex flex-row mt-2"><p>Pedido de:</p><p class="nombre ms-2 fw-bold"></p></div></div><div class="row"><div class="col"><p class="fw-bold">Nombre del producto</p></div><div class="col"><p class="fw-bold">Costo</p></div><div class="col"><p class="fw-bold">Cantidad</p></div></div><div class="row"><div class="col"><h6>Orden de barbacoa de borrego</h6></div><div class="col"><p class="costo">150</p></div><div class="col d-flex align-items-baseline"><button type="button" class="buttonmenos btn btn-primary btn-sm">-</button><p class="cantidad ms-3 me-3">0</p><button type="button" class="buttonmas btn btn-primary btn-sm">+</button></div></div><div class="row"><div class="col"><h6>Orden de barbacoa de res</h6></div><div class="col"><p class="costo">120</p></div><div class="col d-flex align-items-baseline">                    <button type="button" class="buttonmenos btn btn-primary btn-sm">-</button><p class="cantidad ms-3 me-3">0</p><button type="button" class="buttonmas btn btn-primary btn-sm">+</button></div></div><div class="row"><div class="col"><h6>Orden de carnitas</h6></div><div class="col"><p class="costo">100</p></div><div class="col d-flex align-items-baseline"><button type="button" class="buttonmenos btn btn-primary btn-sm">-</button><p class="cantidad ms-3 me-3">0</p><button type="button" class="buttonmas btn btn-primary btn-sm">+</button></div></div><div class="row"><div class="col">                    <h6>Pizza</h6></div><div class="col"><p class="costo">240</p></div><div class="col d-flex align-items-baseline"><button type="button" class="buttonmenos btn btn-primary btn-sm">-</button> <p class="cantidad ms-3 me-3">0</p><button type="button" class="buttonmas btn btn-primary btn-sm">+</button></div></div><div class="row"><div class="col"><h6>Gordas de horno</h6></div>                <div class="col"><p class="costo">20</p></div><div class="col d-flex align-items-baseline"><button type="button" class="buttonmenos btn btn-primary btn-sm">-</button><p class="cantidad ms-3 me-3">0</p><button type="button" class="buttonmas btn btn-primary btn-sm">+</button></div></div><div class="row"><div class="col"><h6>Atole de arroz</h6></div><div class="col"><p class="costo">20</p></div>                <div class="col d-flex align-items-baseline"><button type="button" class="buttonmenos btn btn-primary btn-sm">-</button><p class="cantidad ms-3 me-3">0</p> <button type="button" class="buttonmas btn btn-primary btn-sm">+</button></div></div> <div class="row"><div class="col"><h6>Gorditas</h6></div><div class="col"><p class="costo">15</p></div><div class="col d-flex align-items-baseline">                    <button type="button" class="buttonmenos btn btn-primary btn-sm">-</button>                    <p class="cantidad ms-3 me-3">0</p>                    <button type="button" class="buttonmas btn btn-primary btn-sm">+</button>                </div>            </div>            <div class="row">                <div class="col">                    <h6>Quesadilla sencilla</h6>                </div>                <div class="col">                    <p class="costo">15</p>                </div>                <div class="col d-flex align-items-baseline">                    <button type="button" class="buttonmenos btn btn-primary btn-sm">-</button>                    <p class="cantidad ms-3 me-3">0</p>                    <button type="button" class="buttonmas btn btn-primary btn-sm">+</button>                </div>            </div>            <div class="row">                <div class="col">                    <h6>Quesadilla con guisado</h6>                </div>                <div class="col">                    <p class="costo">25</p>                </div>                <div class="col d-flex align-items-baseline">                    <button type="button" class="buttonmenos btn btn-primary btn-sm">-</button>                    <p class="cantidad ms-3 me-3">0</p>                    <button type="button" class="buttonmas btn btn-primary btn-sm">+</button>                </div>            </div>            <div class="row">                <div class="col">                    <h6>Quesadilla de arrachera</h6>                </div>                <div class="col">                    <p class="costo">30</p>                </div>                <div class="col d-flex align-items-baseline">                    <button type="button" class="buttonmenos btn btn-primary btn-sm">-</button>                    <p class="cantidad ms-3 me-3">0</p>                    <button type="button" class="buttonmas btn btn-primary btn-sm">+</button>                </div>            </div>            <div class="row">                <div class="col">                    <h6>Sopes sencillos</h6>                </div>                <div class="col">                    <p class="costo">15</p>                </div>                <div class="col d-flex align-items-baseline">                    <button type="button" class="buttonmenos btn btn-primary btn-sm">-</button>                    <p class="cantidad ms-3 me-3">0</p>                    <button type="button" class="buttonmas btn btn-primary btn-sm">+</button>                </div>            </div>            <div class="row">                <div class="col">                    <h6>Sopes con guisado</h6>                </div>                <div class="col">                    <p class="costo">20</p>                </div>                <div class="col d-flex align-items-baseline">                    <button type="button" class="buttonmenos btn btn-primary btn-sm">-</button>                    <p class="cantidad ms-3 me-3">0</p>                    <button type="button" class="buttonmas btn btn-primary btn-sm">+</button>                </div>            </div>            <div class="row">                <div class="col">                    <h6>Menudo chico</h6>                </div>                <div class="col">                    <p class="costo">75</p>                </div>                <div class="col d-flex align-items-baseline">                    <button type="button" class="buttonmenos btn btn-primary btn-sm">-</button>                    <p class="cantidad ms-3 me-3">0</p>                    <button type="button" class="buttonmas btn btn-primary btn-sm">+</button>                </div>            </div>            <div class="row">                <div class="col">                    <h6>Menudo grande</h6>                </div>                <div class="col">                    <p class="costo">85</p>                </div>                <div class="col d-flex align-items-baseline">                    <button type="button" class="buttonmenos btn btn-primary btn-sm">-</button>                    <p class="cantidad ms-3 me-3">0</p>                    <button type="button" class="buttonmas btn btn-primary btn-sm">+</button>                </div>            </div>            <div class="row">                <div class="col">                    <h6>Desayuno de la casa</h6>                </div>                <div class="col">                    <p class="costo">90</p>                </div>                <div class="col d-flex align-items-baseline">                    <button type="button" class="buttonmenos btn btn-primary btn-sm">-</button>                    <p class="cantidad ms-3 me-3">0</p>                    <button type="button" class="buttonmas btn btn-primary btn-sm">+</button>                </div>            </div>            <div class="row">                <div class="col">                    <h6>Cerveza</h6>                </div>                <div class="col">                    <p class="costo">25</p>                </div>                <div class="col d-flex align-items-baseline">                    <button type="button" class="buttonmenos btn btn-primary btn-sm">-</button>                    <p class="cantidad ms-3 me-3">0</p>                    <button type="button" class="buttonmas btn btn-primary btn-sm">+</button>                </div>            </div>            <div class="row">                <div class="col">                    <h6>Refresco</h6>                </div>                <div class="col">                    <p class="costo">20</p>                </div>                <div class="col d-flex align-items-baseline">                    <button type="button" class="buttonmenos btn btn-primary btn-sm">-</button>                    <p class="cantidad ms-3 me-3">0</p>                    <button type="button" class="buttonmas btn btn-primary btn-sm">+</button>                </div>            </div>            <div class="row">                <div class="col">                    <h6>Boing</h6>                </div>                <div class="col">                    <p class="costo">18</p>                </div>                <div class="col d-flex align-items-baseline">                    <button type="button" class="buttonmenos btn btn-primary btn-sm">-</button>                    <p class="cantidad ms-3 me-3">0</p>                    <button type="button" class="buttonmas btn btn-primary btn-sm">+</button>                </div>            </div>            <div class="row">                <div class="col d-flex flex-row">                    <p> Total: </p>                     <p class="total ms-5 fw-bold"></p>                 </div>                <div class="col">                    <button type="button" class="total btn btn-primary">Total</button>                </div>            </div>        </div>   ';
+            
+            $("button.agregar-pedido").click(function(){
+                $(".ordenes").append(pedido);
+            });
+
+            $("#wrapper").on("click","button.buttonmas",function(){
+                x = $(this).closest(".row").find(".cantidad").text();
+                x++;
+                $(this).closest(".row").find(".cantidad").text(x);
+            });
+
+            $("#wrapper").on("click","button.buttonmenos",function(){
+                x = $(this).closest(".row").find(".cantidad").text();
+                x--;
+                $(this).closest(".row").find(".cantidad").text(x);
+            });
+
+            $("#wrapper").on("click","button.total",function(){
+                var cantidad = [];
+                var costo = [];
+                var total = [];
+                var final = 0;
+                $(this).closest(".card").find('.cantidad').each(function() {
+                    cantidad.push(parseInt($(this).text()));
+                });
+                $(this).closest(".card").find('.costo').each(function() {
+                    costo.push(parseInt($(this).text()));
+                });
+                for (var i=0; i<cantidad.length; i++) {
+                    total.push(cantidad[i]*costo[i]);
+                    final+=total[i];
+                }
+                console.log(cantidad);
+                console.log(costo);
+                console.log(total);
+                $(this).closest(".card").find('p.total').text(final);
+            });
+            
+            $("#wrapper").on("click","button.nombre",function(){
+                var nombre = $(this).closest(".card").find('.nombre-input').val();
+                $(this).closest(".card").find('p.nombre').text(nombre);
+            });
+        });
+    </script>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
